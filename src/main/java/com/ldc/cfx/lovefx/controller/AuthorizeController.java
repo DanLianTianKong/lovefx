@@ -19,11 +19,11 @@ public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
 
-    @Value("github.client.id")
+    @Value("${github.client.id}")
     private String clientId;
-    @Value("github.client.redirectUri")
+    @Value("${github.client.redirectUri}")
     private String redirectUri;
-    @Value("github.client.secret")
+    @Value("${github.client.secret}")
     private String secret;
 
     @RequestMapping("/callback")
